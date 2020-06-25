@@ -9,7 +9,6 @@
   border: 1px solid black;
   margin: 0px 100px;
   padding: 0px 20px;
-  overflow: hidden;
 }
 
 /* Section 1 */
@@ -23,14 +22,13 @@
 
 .rectangle-1 {
   height: 70px;
-  width: 400px;
+  width: 30%;
   background-color: #f9dbdb;
-  overflow: hidden;
 }
 
 .rectangle-2 {
   height: 70px;
-  width: 150px;
+  width: 20%;
   background-color: #f9dbdb;
 }
 
@@ -40,12 +38,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .rectangle-r2 {
   height: 100px;
-  width: 500px;
+  width: 40%;
   background-color: #f9dbdb;
   margin: 0 auto;
   margin-top: 30px;
@@ -55,7 +52,7 @@
 
 .rectangle-r3 {
   height: 30px;
-  width: 120px;
+  width: 10%;
   background-color: #f9dbdb;
   margin: 10px auto 10px auto;
 }
@@ -65,7 +62,7 @@
 .row-4 {
   background-color: #f9dbdb;
   padding: 10px;
-  height: 420px;
+  height: 500px;
   overflow: hidden;
 }
 
