@@ -3,84 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Assignment 1</title>
+    <title>Assignment 2</title>
   </head>
   <body>
-    <div class="border-box">
-      <div class="top-header-row">
-        <div class="rectangle-1"></div>
-        <div class="rectangle-2"></div>
-      </div>
-
-      <div class="row-2">
-        <div class="rectangle-r2"></div>
-        <div class="rectangle-r3"></div>
-      </div>
-
-      <div class="row-4">
-        <div class="container-r4">
-          <div class="col1">
-            <div class="grid-item"></div>
-            <div class="grid-item" style="margin-top: 5px;"></div>
+    <div class="container">
+      <section class="border-box">
+        <header>
+          <div class="site-title">
+            <strong class="main-title-left">Textify</strong>
+            <p class="main-title-subtitle">Because Text Messaging Rocks</p>
           </div>
-          <div class="col2">
-            <div class="grid-item-col1-1"></div>
-            <div class="col2-r">
-              <div class="grid-item-col1-2"></div>
-              <div class="grid-item-col1-3"></div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#"><strong class="all-links">Logout</strong></a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="number-row2">
+          <div class="box-r2">(212) 555-1234</div>
+          <div class="box-r3">
+            <a class="all-links" href="#">What is this number?</a>
+          </div>
+        </div>
+
+        <div class="row-4">
+          <div class="row4-row1">
+            <div class="row-col-title">To:</div>
+            <div class="row1-col-2">
+              <input
+                class="fill-width-text-box-1"
+                type="text"
+                name="myText"
+                selectBoxOptions="Canada;Denmark;Finland;Germany;Mexico"
+              />
+            </div>
+            <div class="row1-col-3">
+              <span class="small-brackets">&lt;&lt;</span>Phone number or name
             </div>
           </div>
-          <div class="col3">
-            <div class="grid-item-col3"></div>
+
+          <div class="row4-row2">
+            <div class="row-col-title">Message:</div>
+            <div class="row2-col-2">
+              <div class="row2-col-2-r1">
+                <textarea
+                  class="message"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="6"
+                ></textarea>
+              </div>
+              <div class="row2-col-2-r2">
+                <a class="all-links" href="#"
+                  >Attach a photo to this text message</a
+                >
+              </div>
+              <div class="row3-col-2-r3">
+                <div class="row3-col-2-r3-c1">
+                  <button class="button-row3">Send Text Message</button>
+                </div>
+                <div class="row3-col-2-r3-c2">
+                  Or,&nbsp;<a class="all-links" href="#">
+                    schedule it for later delivery</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row-c2-r4">
-          <div class="grid-item-col3-r4"></div>
-          <div class="grid-item-col4-r4"></div>
-        </div>
-      </div>
+      </section>
 
-      <div class="row-5">
-        <div class="col-r5-left">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
+      <section class="border-box-2">
+        <div class="tab">
+          <button class="tablinks">Recent Conversations</button>
+          <button class="tablinks">All Conversations</button>
+          <button class="tablinks">Photos</button>
         </div>
-        <div class="col-r5-right">
-          <div class="box-right"></div>
+        <div class="top-header-row-2">
+          <div class="rectangle-1-2"></div>
+          <div class="rectangle-2-2"></div>
         </div>
-      </div>
-    </div>
-
-    <div class="border-box-2">
-      <div class="top-header-row-2">
-        <div class="rectangle-1-2"></div>
-        <div class="rectangle-2-2"></div>
-      </div>
-      <div class="content-1">
-        <div class="content1-col1-row1"></div>
-        <div class="content1-cols-row2">
+        <div class="content-1">
+          <div class="content1-col1-row1"></div>
+          <div class="content1-cols-row2">
+            <div class="content1-col1-row2"></div>
+            <div class="content1-col2-row2"></div>
+          </div>
+          <div class="content1-col1-row3"></div>
+        </div>
+        <div class="content-2">
+          <div class="content2-row"></div>
+        </div>
+        <div class="content-3">
+          <div class="content1-col1-row1"></div>
           <div class="content1-col1-row2"></div>
-          <div class="content1-col2-row2"></div>
         </div>
-        <div class="content1-col1-row3"></div>
-      </div>
-      <div class="content-2">
-        <div class="content2-row"></div>
-      </div>
-      <div class="content-3">
-        <div class="content1-col1-row1"></div>
-        <div class="content1-col1-row2"></div>
-      </div>
-      <div class="content-4">
-        <div class="content4-col1-row1"></div>
-        <div class="content4-col1-row2"></div>
-      </div>
-      <div class="content-5">
-        <div class="content5-col1-row1"></div>
-        <div class="content5-col1-row2"></div>
-      </div>
+        <div class="content-4">
+          <div class="content4-col1-row1"></div>
+          <div class="content4-col1-row2"></div>
+        </div>
+        <div class="content-5">
+          <div class="content5-col1-row1"></div>
+          <div class="content5-col1-row2"></div>
+        </div>
+      </section>
     </div>
     <footer>
       <div class="final-left"></div>

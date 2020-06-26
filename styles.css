@@ -2,17 +2,46 @@
   box-sizing: border-box;
 }
 
-.border-box {
-  position: relative;
-  margin: 1% auto;
-  background-color: #fff;
-  border: 1px solid black;
+body {
+  margin: 0px;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  color: #332d33;
+}
+
+.container {
+  border: 1px solid #332b33;
   margin: 0px 100px;
+  position: relative;
+  border-top-width: 10px;
+}
+
+.border-box {
+  background-color: #fff;
   padding: 0px 20px;
 }
 
+/* =============
+Universal Custom Css Start
+================ */
+
+.all-links {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #332d33;
+}
+
+/* =============
+Universal Custom Css END
+================ */
+
 /* Section 1 */
 /* row 1 */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
 
 .top-header-row {
   display: flex;
@@ -20,131 +49,237 @@
   flex-wrap: wrap;
 }
 
-.rectangle-1 {
+.site-title {
   height: 70px;
-  width: 30%;
-  background-color: #f9dbdb;
+  width: 40%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
 }
 
-.rectangle-2 {
+.main-title-left {
+  padding-right: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+.main-title-subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-weight: light;
+  font-size: 1.5rem;
+}
+
+.nav {
   height: 70px;
   width: 20%;
   background-color: #f9dbdb;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
 /* row 2 */
 
-.row-2 {
+.number-row2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.rectangle-r2 {
+.box-r2 {
   height: 100px;
   width: 40%;
-  background-color: #f9dbdb;
   margin: 0 auto;
   margin-top: 30px;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
 }
 
 /* row 3 */
 
-.rectangle-r3 {
+.box-r3 {
   height: 30px;
-  width: 10%;
-  background-color: #f9dbdb;
+  width: 15%;
   margin: 10px auto 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* row 4 */
 
+/* Ultimate Parent */
 .row-4 {
-  background-color: #f9dbdb;
-  padding: 10px;
-  height: 500px;
-  overflow: hidden;
+  background-color: #f2f2f2;
+  padding: 40px;
+  height: 380px;
+  width: 100%;
 }
 
-.container-r4 {
-  display: inline-flex;
+/* First Row Parent */
+.row4-row1 {
+  display: flex;
+  align-items: center;
 }
 
-.col1 {
-  width: 300px;
-  overflow: hidden;
-  margin-top: 5px;
+/* First row child */
+.row-col-title {
+  display: flex;
+  width: 15%;
+  height: 30px;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.grid-item {
+.row1-col-2 {
+  display: flex;
+  width: 40%;
+  height: 50px;
+  padding: 0px 10px;
+}
+
+.fill-width-text-box-1 {
+  flex: 1;
+  font-size: 2rem;
+}
+
+.small-brackets {
+  font-size: small;
+}
+
+.row1-col-3 {
+  width: 40%;
+  height: 30px;
+  font-size: 2rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #a6a6a6;
+}
+
+/* Second Row Parent */
+
+.row4-row2 {
+  margin-top: 20px;
+  display: flex;
+}
+
+/* left Child Cols */
+.row2-col-1 {
+  background-color: #afadae;
+  width: 25%;
+  height: 30px;
+}
+
+/* right Parent cols PARENT */
+.row2-col-2 {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  padding: 0px 10px;
+  flex: 1;
+}
+
+/* the big box */
+.row2-col-2-r1 {
   background-color: #afadae;
   width: 100%;
-  height: 20px;
-  margin: 20px;
+  height: 100px;
+  display: flex;
 }
 
-.col2 {
-  width: 800px;
-  overflow: hidden;
-  margin: 20px 0px 0px 20px;
+.message {
+  flex: 1;
+  font-size: 1.5rem;
 }
 
-.grid-item-col1-1 {
-  background-color: #afadae;
-  width: 400px;
-  height: 30px;
-  display: inline-block;
-}
-
-.grid-item-col1-2 {
-  background-color: #afadae;
-  width: 800px;
-  height: 200px;
+/* the next small row after the big box */
+.row2-col-2-r2 {
   margin-top: 10px;
-}
-
-.grid-item-col1-3 {
-  background-color: #afadae;
-  width: 300px;
+  width: 30%;
   height: 30px;
-  margin-top: 10px;
 }
 
-.col3 {
-  position: absolute;
-  padding-right: 59px;
+/* the last row PARENT */
+.row3-col-2-r3 {
   margin-top: 20px;
-  right: 0px;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
 }
 
-.grid-item-col3 {
-  background-color: #afadae;
-  width: 370px;
-  height: 20px;
-  margin-top: 3px;
-}
-
-.row-c2-r4 {
-  margin-left: 320px;
-  margin-right: 20px;
-  display: inline-flex;
-}
-
-.grid-item-col3-r4 {
-  background-color: #afadae;
-  width: 300px;
+/* column 1 of last row */
+.row3-col-2-r3-c1 {
+  width: 30%;
   height: 80px;
-  margin-top: 3px;
+  display: flex;
+  align-items: center;
 }
 
-.grid-item-col4-r4 {
-  background-color: #afadae;
-  width: 300px;
-  height: 50px;
-  margin: 20px 20px;
+.button-row3 {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  flex: 1;
+}
+
+/* column 2 of last row */
+.row3-col-2-r3-c2 {
+  padding-left: 20px;
+  width: 45%;
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 /* row 5 */
+
+/* Tabs */
+
+.tab {
+  margin-top: 50px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
 
 .row-5 {
   display: inline-flex;
@@ -162,7 +297,6 @@
 
 .box {
   margin: 0px 10px 0px 0px;
-  background-color: #f9dbdb;
   border: 1px solid black;
   width: 200px;
   height: 50px;
@@ -183,14 +317,10 @@
 /* top nav*/
 
 .border-box-2 {
-  position: relative;
-  margin: 1% auto;
   background-color: #f9dbdb;
-  border: 1px solid black;
   border-top: none;
-  margin: 0px 100px;
-  padding: 30px 20px 0px 20px;
-  overflow: hidden;
+  width: 100%;
+  padding: 20px 20px 0px 20px;
 }
 
 .rectangle-1-2 {
