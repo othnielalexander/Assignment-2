@@ -17,11 +17,12 @@
   <body>
     <div class="container">
       <section class="border-box">
-        <header>
-          <div class="site-title">
-            <strong class="main-title-left">Textify</strong>
-            <p class="main-title-subtitle">Because Text Messaging Rocks</p>
+        <header class="site-title">
+          <div class="main-title">
+            <strong class="main-title-left">Textify</strong>Because Text
+            Messaging Rocks
           </div>
+
           <nav>
             <ul>
               <li>
@@ -31,15 +32,15 @@
           </nav>
         </header>
 
-        <div class="number-row2">
-          <div class="box-r2">(212) 555-1234</div>
-          <div class="box-r3">
+        <div class="number-row">
+          <div class="main-number">(212) 555-1234</div>
+          <div class="number-desc">
             <a class="all-links" href="#">What is this number?</a>
           </div>
         </div>
 
-        <div class="row-4">
-          <div class="row4-row1">
+        <div class="message-container">
+          <div class="message-row1">
             <div class="row-col-title">To:</div>
             <div class="row1-col-2">
               <input
@@ -92,32 +93,32 @@
           <button class="tablinks">All Conversations</button>
           <button class="tablinks">Photos</button>
         </div>
-        <div class="top-header-row-2">
-          <div class="rectangle-1-2"></div>
-          <div class="rectangle-2-2"></div>
-        </div>
-        <div class="content-1">
-          <div class="content1-col1-row1"></div>
-          <div class="content1-cols-row2">
-            <div class="content1-col1-row2"></div>
-            <div class="content1-col2-row2"></div>
+        <div id="#" class="tabcontent">
+          <div class="top-header-row-2">
+            <div class="top-left-section2">
+              <div class="rectangle-1-1">(508) 555-1234</div>
+              <div class="rectangle-1-2">
+                <a class="all-links" href="#">Set a name for this number</a>
+              </div>
+            </div>
+            <div class="top-right-section2">
+              <a class="all-links new-link" href="#">View All Conversations</a>
+              <span class="small-brackets">&nbsp;&nbsp;&gt;&gt;</span>
+            </div>
           </div>
-          <div class="content1-col1-row3"></div>
-        </div>
-        <div class="content-2">
-          <div class="content2-row"></div>
-        </div>
-        <div class="content-3">
-          <div class="content1-col1-row1"></div>
-          <div class="content1-col1-row2"></div>
-        </div>
-        <div class="content-4">
-          <div class="content4-col1-row1"></div>
-          <div class="content4-col1-row2"></div>
-        </div>
-        <div class="content-5">
-          <div class="content5-col1-row1"></div>
-          <div class="content5-col1-row2"></div>
+
+          <div class="new-text-message">
+            <div class="heading-message">New Text Message:</div>
+            <div class="content1-cols-row2">
+              <div class="content1-col1-row2">
+                <textarea
+                class="message"
+                name="new-text-message"
+                id="new-text-message"
+                ></textarea>
+              </div>
+              <div class="content1-col2-row2"><button class="button-row3">Send Message</button></div>
+            </div>
         </div>
       </section>
     </div>

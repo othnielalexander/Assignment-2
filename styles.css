@@ -1,29 +1,24 @@
+/* =============
+Universal Custom Css Start
+================ */
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0px;
-  font-size: 16px;
+  margin: 0;
+  font-size: 1rem;
   font-family: "Quicksand", sans-serif;
   color: #332d33;
 }
 
 .container {
   border: 1px solid #332b33;
-  margin: 0px 100px;
+  margin: 0 100px;
   position: relative;
   border-top-width: 10px;
 }
-
-.border-box {
-  background-color: #fff;
-  padding: 0px 20px;
-}
-
-/* =============
-Universal Custom Css Start
-================ */
 
 .all-links {
   font-size: 1.1rem;
@@ -31,12 +26,18 @@ Universal Custom Css Start
   color: #332d33;
 }
 
+span {
+  font-weight: bold;
+}
+
 /* =============
-Universal Custom Css END
+Section 1
 ================ */
 
-/* Section 1 */
-/* row 1 */
+.border-box {
+  background-color: #fff;
+  padding: 0px 20px;
+}
 
 header {
   display: flex;
@@ -51,8 +52,13 @@ header {
 
 .site-title {
   height: 70px;
-  width: 40%;
   font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-title {
   display: flex;
   align-items: center;
 }
@@ -61,12 +67,6 @@ header {
   padding-right: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
-}
-
-.main-title-subtitle {
-  font-family: "Quicksand", sans-serif;
-  font-weight: light;
-  font-size: 1.5rem;
 }
 
 .nav {
@@ -81,15 +81,25 @@ nav ul {
   font-size: 1.25rem;
 }
 
+@media (max-width: 675px) {
+  .site-title {
+    flex-direction: column;
+  }
+
+  .main-title {
+    flex-direction: column;
+  }
+}
+
 /* row 2 */
 
-.number-row2 {
+.number-row {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.box-r2 {
+.main-number {
   height: 100px;
   width: 40%;
   margin: 0 auto;
@@ -104,7 +114,7 @@ nav ul {
 
 /* row 3 */
 
-.box-r3 {
+.number-desc {
   height: 30px;
   width: 15%;
   margin: 10px auto 10px auto;
@@ -116,7 +126,7 @@ nav ul {
 /* row 4 */
 
 /* Ultimate Parent */
-.row-4 {
+.message-container {
   background-color: #f2f2f2;
   padding: 40px;
   height: 380px;
@@ -124,7 +134,7 @@ nav ul {
 }
 
 /* First Row Parent */
-.row4-row1 {
+.message-row1 {
   display: flex;
   align-items: center;
 }
@@ -207,7 +217,6 @@ nav ul {
 /* the next small row after the big box */
 .row2-col-2-r2 {
   margin-top: 10px;
-  width: 30%;
   height: 30px;
 }
 
@@ -221,7 +230,6 @@ nav ul {
 
 /* column 1 of last row */
 .row3-col-2-r3-c1 {
-  width: 30%;
   height: 80px;
   display: flex;
   align-items: center;
@@ -243,27 +251,33 @@ nav ul {
 /* column 2 of last row */
 .row3-col-2-r3-c2 {
   padding-left: 20px;
-  width: 45%;
   height: 40px;
   display: flex;
   align-items: center;
 }
 
-/* row 5 */
+/* =============
+Section 2
+================ */
+
+.border-box-2 {
+  border-top: none;
+  width: 100%;
+  margin-top: 50px;
+  padding: 20px 0px;
+}
 
 /* Tabs */
 
 .tab {
-  margin-top: 50px;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f2f2f2;
 }
 
 .tab button {
   background-color: inherit;
   float: left;
-  border: 1px solid black;
+  border: 1px solid #bfbfbf;
+  border-bottom: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -271,14 +285,24 @@ nav ul {
   font-size: 17px;
 }
 
+.tablinks {
+  margin-left: 20px;
+}
+
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #f7f7f7;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #f7f7f7;
+}
+
+.tabcontent {
+  background-color: #f7f7f7;
+  border-top: 1px solid #bfbfbf;
+  padding: 20px 20px;
 }
 
 .row-5 {
@@ -313,134 +337,92 @@ nav ul {
   margin-left: 400px;
 }
 
-/* section 2 */
-/* top nav*/
+/* ================
+ section 2 
+ ==================*/
 
-.border-box-2 {
-  background-color: #f9dbdb;
-  border-top: none;
-  width: 100%;
-  padding: 20px 20px 0px 20px;
+/* top left for tab*/
+
+.top-header-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-left-section2 {
+  display: flex;
+  align-items: center;
+}
+
+.rectangle-1-1 {
+  overflow: hidden;
+  font-size: 2rem;
 }
 
 .rectangle-1-2 {
-  height: 70px;
-  width: 300px;
-  background-color: #afadae;
-  display: inline-block;
-  overflow: hidden;
+  padding-left: 20px;
 }
 
-.rectangle-2-2 {
-  height: 70px;
-  width: 400px;
-  background-color: #afadae;
-  float: right;
+.top-right-section2 {
+  font-style: normal;
+  color: #404040;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
 }
 
-/* content-1 */
+.new-link {
+  font-size: 2rem;
+}
 
-.content-1 {
+/*================
+ content1 - textarea (New Text Message)
+ =================*/
+
+.new-text-message {
+}
+
+.heading-message {
   margin-top: 20px;
-}
-
-.content1-col1-row1 {
-  height: 30px;
-  width: 200px;
-  background-color: #afadae;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 .content1-cols-row2 {
   display: flex;
-  flex-flow: row;
 }
 
 .content1-col1-row2 {
   margin-top: 10px;
   height: 80px;
-  width: 900px;
+  width: 80%;
   background-color: #afadae;
   margin-right: 10px;
+  display: flex;
+}
+
+.content1-col1-row2 textarea {
+  flex: 1;
 }
 
 .content1-col2-row2 {
-  flex: 1;
+  display: flex;
   margin-top: 10px;
-  height: 80px;
-  width: 50px;
   background-color: #afadae;
   margin-left: 10px;
 }
 
-.content1-col1-row3 {
-  margin-top: 10px;
-  height: 30px;
-  width: 500px;
-  background-color: #afadae;
+.content1-col2-row2 button {
+  flex: 1;
 }
 
 /* content-2 */
 
-.content-2 {
-  margin-top: 20px;
-  display: flex;
-  flex-flow: row;
-}
-
-.content2-row {
-  flex: 1;
-  height: 80px;
-  width: 50px;
-  background-color: #afadae;
-}
-
 /* content-3 */
-
-.content-3 {
-  margin-top: 20px;
-}
 
 /* content-4 */
 
-.content-4 {
-  margin-top: 20px;
-  float: right;
-}
-
-.content4-col1-row1 {
-  height: 30px;
-  width: 200px;
-  background-color: #afadae;
-  right: 0px;
-}
-
-.content4-col1-row2 {
-  margin-top: 10px;
-  height: 80px;
-  width: 900px;
-  background-color: #afadae;
-  margin-right: 10px;
-}
-
 /* content-5 */
-.content-5 {
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.content5-col1-row1 {
-  height: 30px;
-  width: 200px;
-  background-color: #afadae;
-}
-
-.content5-col1-row2 {
-  margin-top: 10px;
-  height: 80px;
-  width: 900px;
-  background-color: #afadae;
-  margin-right: 10px;
-}
 
 /* final footer */
 
