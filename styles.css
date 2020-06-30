@@ -16,7 +16,6 @@ body {
 .container {
   border: 1px solid #332b33;
   margin: 0 100px;
-  position: relative;
   border-top-width: 10px;
 }
 
@@ -29,6 +28,11 @@ body {
 span {
   font-weight: bold;
 }
+
+
+/* =============
+ Typography 
+ ===============*/
 
 /* =============
 Section 1
@@ -71,7 +75,8 @@ header {
 
 .nav {
   height: 70px;
-  width: 20%;
+  width: 100%;
+  max-width: 200px;
   background-color: #f9dbdb;
 }
 
