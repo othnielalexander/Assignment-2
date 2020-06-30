@@ -13,9 +13,13 @@ body {
   color: #332d33;
 }
 
+.main-container {
+  margin: 0px 200px;
+}
+
 .container {
   border: 1px solid #332b33;
-  margin: 0 100px;
+  margin: 0 auto;
   border-top-width: 10px;
 }
 
@@ -29,10 +33,11 @@ span {
   font-weight: bold;
 }
 
-
 /* =============
  Typography 
  ===============*/
+
+/* Nothing to add here atleast for now */
 
 /* =============
 Section 1
@@ -86,13 +91,14 @@ nav ul {
   font-size: 1.25rem;
 }
 
-@media (max-width: 675px) {
+@media (max-width: 905px) {
   .site-title {
     flex-direction: column;
   }
 
   .main-title {
     flex-direction: column;
+    font-size: 1.2rem;
   }
 }
 
@@ -106,7 +112,8 @@ nav ul {
 
 .main-number {
   height: 100px;
-  width: 40%;
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
   margin-top: 30px;
   font-size: 4rem;
@@ -117,11 +124,18 @@ nav ul {
   align-items: center;
 }
 
+@media (max-width: 905px) {
+  .main-number {
+    font-size: 1.8rem;
+  }
+}
+
 /* row 3 */
 
 .number-desc {
   height: 30px;
-  width: 15%;
+  width: 100%;
+  max-width: 1500px;
   margin: 10px auto 10px auto;
   display: flex;
   justify-content: center;
@@ -136,35 +150,35 @@ nav ul {
   padding: 40px;
   height: 380px;
   width: 100%;
+  max-width: 1500px;
 }
 
-/* First Row Parent */
 .message-row1 {
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: 1500px;
 }
 
-/* First row child */
 .row-col-title {
-  display: flex;
-  width: 15%;
+  width: 100%;
+  max-width: 150px;
   height: 30px;
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  justify-content: flex-end;
   align-items: center;
 }
 
 .row1-col-2 {
   display: flex;
-  width: 40%;
+  width: 100%;
   height: 50px;
   padding: 0px 10px;
+  align-items: center;
 }
 
 .fill-width-text-box-1 {
-  flex: 1;
   font-size: 2rem;
 }
 
@@ -173,14 +187,25 @@ nav ul {
 }
 
 .row1-col-3 {
-  width: 40%;
-  height: 30px;
-  font-size: 2rem;
-  font-style: italic;
+  margin-left: 10px;
   display: flex;
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+  font-size: 1.3rem;
+  font-style: italic;
   align-items: center;
   font-weight: bold;
   color: #a6a6a6;
+}
+
+@media (max-width: 905px) {
+  .message-row1 {
+    display: inline-block;
+  }
+
+  .row1-col-2 {
+  }
 }
 
 /* Second Row Parent */
