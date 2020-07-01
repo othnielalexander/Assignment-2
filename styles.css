@@ -126,7 +126,7 @@ nav ul {
 
 @media (max-width: 905px) {
   .main-number {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -148,7 +148,6 @@ nav ul {
 .message-container {
   background-color: #f2f2f2;
   padding: 40px;
-  height: 380px;
   width: 100%;
   max-width: 1500px;
 }
@@ -163,7 +162,6 @@ nav ul {
 .row-col-title {
   width: 100%;
   max-width: 150px;
-  height: 30px;
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -173,7 +171,6 @@ nav ul {
 .row1-col-2 {
   display: flex;
   width: 100%;
-  height: 50px;
   padding: 0px 10px;
   align-items: center;
 }
@@ -191,7 +188,6 @@ nav ul {
   display: flex;
   width: 100%;
   max-width: 300px;
-  height: 30px;
   font-size: 1.3rem;
   font-style: italic;
   align-items: center;
@@ -205,6 +201,13 @@ nav ul {
   }
 
   .row1-col-2 {
+    display: block;
+    padding: 10px 0px;
+  }
+
+  .row1-col-3 {
+    margin-left: 0px;
+    padding-top: 10px;
   }
 }
 
@@ -278,12 +281,35 @@ nav ul {
   flex: 1;
 }
 
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 /* column 2 of last row */
 .row3-col-2-r3-c2 {
   padding-left: 20px;
   height: 40px;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 905px) {
+  .row4-row2 {
+    display: block;
+  }
+
+  .row2-col-2 {
+    padding: 10px 0px;
+    display: block;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 /* =============
@@ -312,7 +338,7 @@ Section 2
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 1.1rem;
 }
 
 .tablinks {
@@ -328,6 +354,14 @@ Section 2
 .tab button.active {
   background-color: #f7f7f7;
 }
+
+@media (max-width: 905px) {
+  .tab button {
+    font-size: 0.8rem;
+  }
+}
+
+/* ================================ */
 
 .tabcontent {
   background-color: #f7f7f7;
@@ -367,10 +401,6 @@ Section 2
   margin-left: 400px;
 }
 
-/* ================
- section 2 
- ==================*/
-
 /* top left for tab*/
 
 .top-header-row-2 {
@@ -403,6 +433,21 @@ Section 2
 
 .new-link {
   font-size: 2rem;
+}
+
+@media (max-width: 905px) {
+  .rectangle-1-1 {
+    font-size: 1rem;
+  }
+
+  .rectangle-1-2 a {
+    font-size: 0.8rem;
+  }
+
+  .top-right-section2 a,
+  .top-right-section2 .small-brackets {
+    font-size: 0.8rem;
+  }
 }
 
 /*================
@@ -449,19 +494,24 @@ Section 2
 .content1-col-row3 {
 }
 
+@media (max-width) {
+  .content1-col-row3 {
+    margin-top: 10px;
+  }
+}
+
 /* content-2 */
 
 .content2-blockquote {
   background-color: #f2f2f2;
-  margin: 20px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .content2-blockquote p {
+  text-align: center;
 }
 
 /*===========
@@ -577,8 +627,8 @@ Section 2
 /* content-9 block quote */
 
 .content9-blockquote {
-  width: 40%;
-  height: 100px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   padding: 10px;
   display: block;
@@ -592,24 +642,46 @@ Section 2
 .content9-blockquote p {
 }
 
+@media (max-width: 905px) {
+}
+
+/* =========================== */
 /* final footer */
 
 footer {
-  margin: 2px 100px;
+  margin: 2px 0px;
   font-size: 0.9rem;
   font-weight: bold;
 }
 
 .final-left {
-  height: 20px;
   display: inline-block;
 }
 
 .final-right {
-  height: 20px;
   float: right;
+  display: flex;
 }
 
 .final-right .all-links {
   font-size: 0.9rem;
+}
+
+@media (max-width: 905px) {
+  .footer {
+    font-size: 0.5rem;
+  }
+
+  .final-right {
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .final-right .all-links {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+  }
 }
