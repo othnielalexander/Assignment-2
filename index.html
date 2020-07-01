@@ -90,11 +90,24 @@
 
         <section class="border-box-2">
           <div class="tab">
-            <button class="tablinks">Recent Conversations</button>
-            <button class="tablinks">All Conversations</button>
-            <button class="tablinks">Photos</button>
+            <div class="left-tabs">
+              <button id="tab-1" class="tablinks" onClick="showIt_tab1();">
+                Recent Conversations
+              </button>
+              <button id="tab-2" class="tablinks" onClick="showIt_tab2();">
+                All Conversations
+              </button>
+              <button id="tab-3" class="tablinks" onClick="showIt_tab3();">
+                Photos
+              </button>
+            </div>
+            <div class="right-tabs">
+              <a class="all-links" href="#">Change Password</a>
+            </div>
           </div>
-          <div id="#" class="tabcontent">
+
+          <!-- Content tab 1 -->
+          <div id="tabcontent-1" class="tabcontent">
             <div class="top-header-row-2">
               <div class="top-left-section2">
                 <div class="rectangle-1-1">(508) 555-1234</div>
@@ -109,7 +122,6 @@
                 <span class="small-brackets">&nbsp;&nbsp;&gt;&gt;</span>
               </div>
             </div>
-
             <div class="new-text-message">
               <div class="heading-message">New Text Message:</div>
               <div class="content1-cols-row2">
@@ -208,6 +220,289 @@
               </p>
             </blockquote>
           </div>
+
+          <!-- Content Tab - 2 -->
+          <div id="tabcontent-2" class="tabcontent">
+            <div class="top-header-row-2">
+              <div class="top-left-section2">
+                <div class="rectangle-1-1">Tab 2</div>
+                <div class="rectangle-1-2">
+                  <a class="all-links" href="#">Set a name for this number</a>
+                </div>
+              </div>
+              <div class="top-right-section2">
+                <a class="all-links new-link" href="#"
+                  >View All Conversations</a
+                >
+                <span class="small-brackets">&nbsp;&nbsp;&gt;&gt;</span>
+              </div>
+            </div>
+            <div class="new-text-message">
+              <div class="heading-message">New Text Message:</div>
+              <div class="content1-cols-row2">
+                <div class="content1-col1-row2">
+                  <textarea
+                    class="message"
+                    name="new-text-message"
+                    id="new-text-message"
+                  ></textarea>
+                </div>
+                <div class="content1-col2-row2">
+                  <button class="button-row3">Send Message</button>
+                </div>
+              </div>
+            </div>
+            <div class="content1-col-row3">
+              <a class="all-links" href="#">Attach a photo</a>&nbsp;or
+              <a class="all-links" href="#">schedule for later delivery</a>
+            </div>
+            <blockquote class="content2-blockquote">
+              <p>
+                You have <span>1 message scheduled</span> for later delivery.
+                <a class="all-links" href="#">Click here to view them.</a>
+              </p>
+            </blockquote>
+            <div class="content3-conv1">
+              <div class="conv-number">
+                (508) 555-1234 <span class="conv-day">Today</span>
+              </div>
+              <div class="conv-message-main">
+                <div class="conv-message sb1">
+                  OMG - I can't wait to see that movie! What theater do you want
+                  to go to? Anything down the Union Sq is really best for me.
+                </div>
+              </div>
+            </div>
+            <div class="content4-conv2">
+              <div class="conv-number">
+                You - (212) 555-1234 <span class="conv-day">Today</span>
+              </div>
+              <div class="conv-message-main">
+                <div class="conv-message sb2">
+                  I'm not really sure what's out. I saw a trailer for The
+                  Adjustment Bureau the other day on TV. I thought it loked
+                  pretty cool. Plus, you "love" Matt!
+                </div>
+              </div>
+            </div>
+            <div class="content5-conv3">
+              <div class="conv-number">
+                (508) 555-1234 <span class="conv-day">Yesterday</span>
+              </div>
+              <div class="conv-message-main">
+                <div class="conv-message sb1">
+                  A movie sounds perfect. What did you have in mind?
+                </div>
+              </div>
+            </div>
+            <div class="content6-conv4 content4-conv2">
+              <div class="conv-number">
+                You - (212) 555-1234 <span class="conv-day">Yesterday</span>
+              </div>
+              <div class="conv-message-main">
+                <div class="conv-message sb2">
+                  Hey sugar, what are you up to this weekend? Haven't seen you
+                  in a while - was hoping we must hang out this weekend... maybe
+                  see a movie :)
+                </div>
+              </div>
+            </div>
+            <div class="content7-conv3">
+              <div class="conv-number">
+                (508) 555-1234 <span class="conv-day">About 6 Weeks Ago</span>
+              </div>
+              <div class="conv-message-main">
+                <div class="conv-message sb1">I know, right?!?!</div>
+              </div>
+            </div>
+            <div class="content8-conv4 content4-conv2">
+              <div class="conv-number">
+                You - (212) 555-1234
+                <span class="conv-day">About 3 Weeks Ago</span>
+              </div>
+              <div class="conv-message-main">
+                <div class="conv-message sb2">
+                  I still can't believe what he said! And right in front of
+                  everyone??? You could probably hear my jaw hit the floor - I
+                  was all like, WTF!!!
+                </div>
+              </div>
+            </div>
+            <blockquote class="content9-blockquote content2-blockquote">
+              <a class="all-links" href="#">Load more Messages.</a>
+              <p>
+                There are <span>217</span> more messages in this conversation.
+              </p>
+            </blockquote>
+          </div>
+
+          <!-- Content tab -3 -->
+
+          <div id="tabcontent-3" class="tabcontent tabcontent-3">
+            <div class="top-header-row-2">
+              <div class="top-left-section2">
+                <div class="rectangle-1-1">Photos From All Conversations</div>
+                <div class="line"></div>
+              </div>
+            </div>
+
+            <div class="main-content-tab-3">
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1558402989-4778474384c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                    alt="unsplash_1"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">(508) 555-1234</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1558403121-aa30fd55fdf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=739&q=80"
+                    alt="unsplash_2"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">Sarah Kelly</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1558403218-e82f727aaaaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    alt="unsplash_3"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">Luke Jones</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="unsplash_4"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">(508) 555-1234</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1558401549-29b4893f4d9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=742&q=80"
+                    alt="unsplash_5"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">(508) 555-1234</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                    alt="unsplash_6"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">Sarah Kelly</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1557425747-929b65a39785?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                    alt="unsplash_7"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">Luke Jones</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1557425631-f132f06f4aa1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=721&q=80"
+                    alt="unsplash_8"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">(508) 555-1234</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1552960366-b330a2f83823?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="unsplash_9"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">(508) 555-1234</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1550082982-44518aee30fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="unsplash_10"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">Sarah Kelly</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1550082849-c4603c163b37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="unsplash_11"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">Luke Jones</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1552664862-db5607e91378?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="unsplash_12"
+                  />
+                </div>
+                <div class="grid-text">
+                  <div class="grid-text-number">(508) 555-1234</div>
+                  <div class="grid-timeline">Sent on 03/01/2011</div>
+                </div>
+              </div>
+            </div>
+
+            <blockquote
+              class="content-tab-3-blockquote content9-blockquote content2-blockquote"
+            >
+              <a class="all-links" href="#">Load more Messages.</a>
+              <p>
+                There are <span>93</span> more Photos across
+                <span>7</span> conversation.
+              </p>
+            </blockquote>
+          </div>
         </section>
       </div>
 
@@ -219,5 +514,32 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      function showIt_tab1() {
+        var x = document.getElementById("tabcontent-1");
+        var y = document.getElementById("tabcontent-2");
+        var z = document.getElementById("tabcontent-3");
+        y.style.display = "none";
+        z.style.display = "none";
+        x.style.display = "block";
+      }
+      function showIt_tab2() {
+        var x = document.getElementById("tabcontent-1");
+        var y = document.getElementById("tabcontent-2");
+        var z = document.getElementById("tabcontent-3");
+        z.style.display = "none";
+        x.style.display = "none";
+        y.style.display = "block";
+      }
+      function showIt_tab3() {
+        var x = document.getElementById("tabcontent-1");
+        var y = document.getElementById("tabcontent-2");
+        var z = document.getElementById("tabcontent-3");
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "block";
+      }
+    </script>
   </body>
 </html>
