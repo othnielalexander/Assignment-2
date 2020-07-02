@@ -433,6 +433,7 @@ Section 2
 .rectangle-1-1 {
   overflow: hidden;
   font-size: 2rem;
+  font-weight: bolder;
 }
 
 .rectangle-1-2 {
@@ -661,7 +662,85 @@ Section 2
 @media (max-width: 905px) {
 }
 
-/* tabcontent - 3 */
+/* =============
+tabcontent - 2
+================*/
+
+.tabcontent-2 {
+}
+
+.tabcontent-2 .top-header-row-2 {
+}
+
+.tabcontent-2 .top-header-row-2 .top-left-section2 {
+  width: 100%;
+  max-width: 1500px;
+  display: block;
+  font-weight: bold;
+}
+
+.line {
+  margin-top: 2px;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+/* Sec-1 */
+
+.sec2-start {
+  margin-top: 20px;
+}
+
+.message-row {
+  width: 100%;
+  max-width: 1500px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.num-metadata {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 200px;
+}
+
+.num-metadata-num {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.num-metadata-data {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  color: #acacac;
+}
+
+.message-full {
+  margin-left: 20px;
+  width: 100%;
+  max-width: 800px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.new {
+  background-color: rgb(77, 77, 77);
+  border-radius: 3px;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2px 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+/* =============
+tabcontent - 3 
+================*/
 
 .tabcontent-3 {
 }
